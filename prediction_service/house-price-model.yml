@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: http://127.0.0.1:8080
+functions:
+  house-price-model:
+    lang: python
+    handler: ./house-price-model
+    image: house-price-model:rel-0.0.1
